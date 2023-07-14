@@ -1,0 +1,146 @@
+.dekstop-mode {
+  background-color: rgba(128, 128, 128, 0.63);
+  width: 100%;
+  height: 50vh;
+}
+
+.mobile-mode {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(231, 231, 231);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dekstop-mode {
+    display: none;
+  }
+
+  .mobile-mode {
+    display: block;
+  }
+
+  /* untuk bagian atas aplikasi pada index rgb(71, 164, 240)*/
+  section.header-1 {
+    background: linear-gradient(to bottom, rgb(0, 119, 216), rgb(71, 164, 240));
+    color: #fff;
+    padding: 5px;
+  }
+
+  /* untuk bagian kontent */
+  section#content {
+    margin-bottom: 15vh;
+  }
+
+  .content {
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(175, 175, 175, 0.747);
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+
+  .content:hover {
+    border: 1px solid rgb(224, 224, 224);
+  }
+
+  .content a {
+    text-decoration: none;
+  }
+
+  .content small {
+    font-size: 10px;
+  }
+
+  /* untuk tombol tambah pada navbar */
+  .tombol-tambah {
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+    margin-top: -5vh;
+  }
+  .text-tambah {
+    text-align: center;
+    line-height: 7vh;
+    font-size: 50px;
+  }
+
+  .navbar-box {
+    height: 8vh;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .navbar-box .icon {
+    line-height: 7vh;
+    font-size: 25px;
+  }
+
+  /* untuk bagian tambah pada tambah.php */
+  .option {
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(175, 175, 175, 0.747);
+    border-radius: 5px;
+  }
+
+  /* untuk inputan jumlah nominal */
+  .input-option-jumlah {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+  }
+  .input-option-jumlah:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    color: #fff;
+  }
+  .input-option-jumlah::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.562);
+    font-weight: bold;
+  }
+
+  /* untuk inputan catatan */
+  .input-option-catatan {
+    background-color: transparent;
+    border: none;
+    height: 4vh;
+    width: 100%;
+    color: grey;
+  }
+  .input-option-catatan:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+  }
+  .tombol-centang {
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+    margin-top: -5vh;
+    margin-bottom: 15vh;
+  }
+  .text-centang {
+    text-align: center;
+    line-height: 8vh;
+    font-size: 100px;
+  }
+
+  /* untuk elemen details */
+  summary:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+  }
+}
